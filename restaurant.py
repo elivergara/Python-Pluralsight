@@ -10,8 +10,8 @@ class Restaurant:
         self.number_served = 0
         self.now_served = 0
 
-    def describe_restaurant(self):
-        print(f"{self.name}, {self.cousine_type}")  # Output the name and cuisine
+    # def describe_restaurant(self):
+    #     print(f"{self.name}, {self.cousine_type}")  # Output the name and cuisine
 
     @property
     def open_restaurant(self):
@@ -35,10 +35,15 @@ restaurants = [
     Restaurant("Olive Garden", "Italian")  # Italian restaurant
 ]
 
+def main():
 # Loop through the list of restaurants and print information about each
-for restaurant in restaurants:
-    restaurant.set_number_served()
-    restaurant.increment_number_served()
-    # Print a message that the restaurant is open, along with its cuisine type
-    print(f"{restaurant.open_restaurant} for {restaurant.cousine_type} food and early it served {restaurant.now_served} people")
-    print(f"{restaurant.open_restaurant} has NOW served {restaurant.number_served} people")
+    for restaurant in restaurants:
+        restaurant.set_number_served()  # Set initial number served
+        before_increment = restaurant.number_served  # Save the number served before increment
+        restaurant.increment_number_served()  # Increment the number served
+        # Print a message that the restaurant is open, along with its cuisine type
+        print(f"{restaurant.open_restaurant} for {restaurant.cousine_type} food and early it served {before_increment} people")
+        print(f"{restaurant.open_restaurant} has NOW served {restaurant.number_served} people")
+
+if __name__=="__main__":
+    main()
