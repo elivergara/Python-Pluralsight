@@ -1,0 +1,4 @@
+Pickup my meds
+take out trash
+study argvars
+study docstrings
