@@ -1,0 +1,4 @@
+.venv/lib/python3.12/site-packages/numpy/f2py/crackfortran.py
+.venv/lib/python3.12/site-packages/numpy/f2py/f2py2e.py
+.venv/lib/python3.12/site-packages/numpy/f2py/rules.py
+.venv/lib/python3.12/site-packages/numpy/testing/print_coercion_tables.py

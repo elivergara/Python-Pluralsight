@@ -18,7 +18,7 @@ class Recipe:
             writer = csv.writer(f)
             writer.writerow([self.meal_category, self.dish_name, self.ingredients, self.cooking_directions])
 
-    # @staticmethod
+    @staticmethod
     def load_from_csv(user_file):
         recipes = []
         if os.path.exists(user_file):
@@ -85,6 +85,7 @@ def clear_fields():
 def open_main_window(username):
     main_window = Toplevel(root)
     main_window.title("Recipe Manager")
+    main_window.geometry("720x480")
     user_file = f"{username}.csv"
 
     # Load recipes for this user
