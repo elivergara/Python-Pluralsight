@@ -2,6 +2,10 @@
 # CS50P: Introduction to Programming with Python - Harvard University
 # Final Project: Digital Recipe Book
 # Author: Eli Vergara
+# GitHub name: elivergara
+# edX username: eli_vergara
+# Florence, Arizona, United States
+#
 # Date: October 28-2024
 # Description:
 # This program is a digital recipe book that allows multiple users to create, store, edit, and print recipes. 
